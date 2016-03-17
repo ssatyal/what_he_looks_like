@@ -1,0 +1,35 @@
+body {
+  background-color: lemonchiffon;
+}
+
+#container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  max-height: 550px;
+  font-family: 'Merriweather';
+}
+#name {
+  font-size: 22px;
+}
+img {
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    border: 10px double black;
+    margin: 10px;
+}
+#lookslike {
+  max-width: 400px;
+  text-align: center;
+  margin: 10px;
+}
+
+#forbutton {
+  text-align: center;
+}
