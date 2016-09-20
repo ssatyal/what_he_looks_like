@@ -156,11 +156,31 @@ var whll = [
 var image = $('img');
 var name = $('#name');
 var text = $('#lookslike');
-randomize = function() {
-  var randomNum = Math.floor(Math.random() * whll.length);
-  var guy = whll[randomNum];
-  $('img').replaceWith('<img src='+whll[randomNum][2]+'>');
-  $('#name').replaceWith('<div id="name">'+guy[0]+'</div>');
-  $('#lookslike').replaceWith('<div id="lookslike">'+guy[1]+'</div>');};
-randomize();
-$('#clicky').click(randomize);
+// randomize = function() {
+//   var randomNum = Math.floor(Math.random() * whll.length);
+//   var guy = whll[randomNum];
+//   $('img').replaceWith('<img src='+whll[randomNum][2]+'>');
+//   $('#name').replaceWith('<div id="name">'+guy[0]+'</div>');
+//   $('#lookslike').replaceWith('<div id="lookslike">'+guy[1]+'</div>');};
+// randomize();
+// $('#clicky').click(randomize);
+var guy = 0;
+loadpage = function(){
+  $('img').replaceWith('<img src='+whll[guy][2]+'>');
+  $('#name').replaceWith('<div id="name">'+whll[guy][0]+'</div>');
+  $('#lookslike').replaceWith('<div id="lookslike">'+whll[guy][1]+'</div>');
+};
+loadpage();
+$("#next").on("click", function(){
+    guy += 1;
+    loadpage();
+});
+$("#back").on("click", function(){
+  if(guy == 0){
+    guy = whll.length-1
+    loadpage();
+  }else{
+    guy -= 1;
+    loadpage();
+  }
+});
