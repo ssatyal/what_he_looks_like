@@ -5,8 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Looklike.destroy_all
+Lookslike.destroy_all
 
-Looklike.create!(year: 2016, name: 'Jim Caldwell',
-lookslike: 'Looks like the nervous armored car driver transporting his largest and last delivery, suspicious his new partner might be up to something. Jay Cutler is his new partner.',
+Lookslike.create!(year: 2016, name: 'Jim Caldwell',
+looks_like: 'Looks like the nervous armored car driver transporting his largest and last delivery, suspicious his new partner might be up to something. Jay Cutler is his new partner.',
 photo_url: 'http://i.imgur.com/lf9MJYM.jpg')
