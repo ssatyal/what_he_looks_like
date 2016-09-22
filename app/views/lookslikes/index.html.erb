@@ -1,0 +1,10 @@
+<% @years.each do |year| %>
+    <div>
+    <%= link_to year.year%>
+    </div>
+  <% end %>
+<% @lookslikes.each do |ll| %>
+  <div>
+    <%= link_to ll.name, ll %>
+  </div>
+    <% end %>

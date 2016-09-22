@@ -138,3 +138,8 @@ photo_url: 'http://i.imgur.com/ew7tvcyl.jpg', year: 2016)
 Lookslike.create!(name: 'Jeff Van Gundy',
 looks_like:'Looks like a nervous scientist in a Sci-Fi movie who, after a series of awkward exchanges with the hero, says "I don\'t get out much."',
 photo_url: 'http://i.imgur.com/9WvujN2l.jpg', year: 2016)
+
+Lookslike.create!(name: 'Stugotz',
+looks_like: "Looks incredibly sick.",
+photo_url: "http://wac.450f.edgecastcdn.net/80450F/1045theteam.com/files/2015/11/Image.jpg?w=600&h=0&zc=1&s=0&a=t&q=89",
+year: 2015)
